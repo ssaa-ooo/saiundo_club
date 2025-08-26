@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彩雲堂倶楽部 - サービス付き高齢者住宅様向け 和菓子お届けサービス</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: 和 (Wa) - Harmony -->
+    <!-- Application Structure Plan: The application uses a single-page, top-to-bottom scrolling structure that mirrors a classic marketing funnel (Attention -> Interest -> Desire -> Action). This linear flow is ideal for a landing page as it guides the user through a persuasive narrative without distractions. It starts with an impactful hero section, builds empathy by addressing user pain points, presents the service as the solution with clear benefits, details the pricing transparently, and concludes with a strong, actionable contact section. This structure was chosen to build trust and desire progressively, making the final decision to inquire feel natural and logical for the target user (facility managers). -->
+    <!-- Visualization & Content Choices: Report Info: Service benefits -> Goal: Communicate value -> Viz/Presentation: Three-column card layout with icons -> Interaction: Subtle hover effects -> Justification: Breaks down complex information into easily digestible chunks, enhancing readability and retention. | Report Info: Pricing Tiers -> Goal: Clarify options -> Viz/Presentation: Three distinct pricing cards -> Interaction: Hover to highlight -> Justification: Allows for easy comparison of features and costs, aiding the user's decision-making process. | Report Info: Call to Action -> Goal: Drive inquiries -> Viz/Presentation: Prominent contact section with tel: links -> Interaction: Click-to-call on mobile -> Justification: Removes friction and makes it as easy as possible for the user to take the desired action. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #FDFBF5;
+            color: #413832;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Noto Serif JP', serif;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .plan-card {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .plan-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border-color: #8C7D6E;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <!-- 1. ファーストビュー -->
+        <section id="hero" class="relative bg-[#F7F3E9] text-[#413832] min-h-screen flex items-center justify-center text-center p-4">
+            <div class="relative z-10">
+                <p class="text-lg md:text-xl mb-2">サービス付き高齢者住宅様向け 和菓子お届けサービス</p>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">施設の暮らしに、彩りと感動を。</h1>
+                <h2 class="text-3xl md:text-5xl font-normal mb-8">職人が届ける、本格和菓子の時間。</h2>
+                <div class="inline-block bg-white rounded-lg p-4 mb-8 border border-gray-200 shadow-sm">
+                    <p class="text-base md:text-lg">創業明治七年 松江の老舗和菓子店「彩雲堂」</p>
+                    <p class="text-base md:text-lg">「現代の名工」にも選ばれた職人が在籍</p>
+                </div>
+                <div>
+                    <a href="#contact" class="cta-button bg-[#8C7D6E] hover:bg-[#786a5e] text-white font-bold py-4 px-10 rounded-full text-lg shadow-lg">
+                        まずはお気軽にご相談ください
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 問題提起・共感 -->
+        <section id="problems" class="py-16 md:py-24 bg-[#FDFBF5]">
+            <div class="container mx-auto px-6 max-w-4xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">施設のレクリエーション、<br class="md:hidden">こんなお悩みありませんか？</h2>
+                <p class="text-lg text-gray-700 mb-12">入居者の皆様に、もっと喜んでいただきたい。そう願う施設様のために、私たちは特別な時間をお届けします。</p>
+                <div class="grid md:grid-cols-2 gap-8 text-left">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold mb-2">マンネリ化</h3>
+                        <p>毎月のイベント内容が同じようなものになりがちで、新しい企画を考えるのが大変…。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold mb-2">季節感の不足</h3>
+                        <p>施設内での生活が中心となり、季節の移ろいを感じる機会が少なくなっている。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold mb-2">準備の手間</h3>
+                        <p>質の高いイベントを企画したいが、日々の業務に追われ、準備や運営に十分な時間を割けない。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold mb-2">満足度の向上</h3>
+                        <p>入居者の皆様やご家族に、もっと「この施設ならでは」の特別な体験を提供したい。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. サービス概要と提供価値 -->
+        <section id="solution" class="py-16 md:py-24 bg-[#F7F3E9]">
+            <div class="container mx-auto px-6 max-w-5xl text-center">
+                <p class="text-lg text-[#8C7D6E] font-semibold">そのお悩み、「彩雲堂倶楽部」が解決します。</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">「彩雲堂倶楽部」が選ばれる3つの理由</h2>
+                <div class="grid md:grid-cols-3 gap-8 md:gap-12">
+                    <div class="text-center">
+                        <div class="text-5xl mb-4 text-[#8C7D6E]">🌸</div>
+                        <h3 class="text-2xl font-bold mb-3">心躍る、季節の彩り</h3>
+                        <p class="text-left">春の桜、夏の涼、秋の紅葉、冬の雪景色。四季折々の風情を映した目にも美しい和菓子が、毎月の楽しみに。入居者の皆様の会話も自然と弾みます。</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl mb-4 text-[#8C7D6E]">🍵</div>
+                        <h3 class="text-2xl font-bold mb-3">本物の味と特別な体験</h3>
+                        <p class="text-left">「現代の名工」にも選ばれた職人が作る、伝統の味をご提供。職人が施設へ伺い、目の前で和菓子作りを実演する「体験型イベント」も開催可能です。</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-5xl mb-4 text-[#8C7D6E]">📞</div>
+                        <h3 class="text-2xl font-bold mb-3">企画・準備の手間いらず</h3>
+                        <p class="text-left">お電話一本で、人数やご予算に応じた最適なプランをご提案。当日は和菓子をお届けするだけなので、スタッフ様の負担を最小限にイベントが実現します。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 料金プラン -->
+        <section id="plans" class="py-16 md:py-24 bg-[#FDFBF5]">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">ご要望に合わせて選べる3つのプラン</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- 梅プラン -->
+                    <div class="plan-card bg-white rounded-xl shadow-lg p-8 flex flex-col">
+                        <h3 class="text-2xl font-bold text-center mb-2">梅プラン</h3>
+                        <p class="text-center text-lg font-semibold text-[#8C7D6E] mb-6">季節の和菓子をお届け</p>
+                        <p class="text-gray-600 mb-6 flex-grow">まずは手軽に始めたい施設様に。毎月の楽しみに、彩り豊かな季節の和菓子をお届けします。</p>
+                        <div class="text-center mt-auto">
+                            <p class="text-3xl font-bold">お一人様 400<span class="text-lg font-normal">円</span></p>
+                        </div>
+                    </div>
+                    <!-- 竹プラン -->
+                    <div class="plan-card bg-white rounded-xl shadow-lg p-8 flex flex-col">
+                        <h3 class="text-2xl font-bold text-center mb-2">竹プラン</h3>
+                        <p class="text-center text-lg font-semibold text-[#8C7D6E] mb-6">季節の和菓子＋お抹茶</p>
+                        <p class="text-gray-600 mb-6 flex-grow">和菓子とお抹茶で、本格的なお茶会を。会話が弾む和やかな時間を演出し、より豊かな体験を提供します。</p>
+                        <div class="text-center mt-auto">
+                            <p class="text-3xl font-bold">お一人様 400<span class="text-lg font-normal">円</span></p>
+                            <p class="text-2xl font-bold mt-2">+ 10,000<span class="text-lg font-normal">円</span></p>
+                            <p class="text-sm text-gray-500 mt-2">※お抹茶セット(10名様まで)。<br>11名様以上は1名あたり1,000円追加。</p>
+                        </div>
+                    </div>
+                    <!-- 松プラン -->
+                    <div class="plan-card bg-white rounded-xl shadow-lg p-8 flex flex-col border-2 border-[#8C7D6E]">
+                        <p class="text-center font-bold text-white bg-[#8C7D6E] rounded-full py-1 px-4 w-fit mx-auto -mt-12 mb-4">一番人気</p>
+                        <h3 class="text-2xl font-bold text-center mb-2">松プラン</h3>
+                        <p class="text-center text-lg font-semibold text-[#8C7D6E] mb-6">季節の和菓子＋職人の実演</p>
+                        <p class="text-gray-600 mb-6 flex-grow">「現代の名工」の技を目の前で。五感で楽しむ、忘れられない特別な一日を入居者の皆様へお届けします。</p>
+                        <div class="text-center mt-auto">
+                            <p class="text-3xl font-bold">お一人様 400<span class="text-lg font-normal">円</span></p>
+                            <p class="text-2xl font-bold mt-2">+ 20,000<span class="text-lg font-normal">円</span></p>
+                            <p class="text-sm text-gray-500 mt-2">※職人出張・実演料</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 5. ご利用プラン例 -->
+        <section id="examples" class="py-16 md:py-24 bg-[#F7F3E9]">
+            <div class="container mx-auto px-6 max-w-4xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">年間でのご利用イメージ</h2>
+                <div class="space-y-8 md:space-y-0 md:flex md:space-x-8 text-left">
+                    <div class="md:w-1/2 bg-white p-8 rounded-lg border border-gray-200">
+                        <h3 class="text-xl font-bold mb-4">プラン例①：季節感を大切にしたい施設様</h3>
+                        <p><strong>11ヶ月は「梅プラン」</strong>で気軽に季節の和菓子を楽しみ、<strong>年に1回、敬老の日などの特別な行事で「竹プラン」</strong>をご利用。メリハリのある年間計画が可能です。</p>
+                    </div>
+                    <div class="md:w-1/2 bg-white p-8 rounded-lg border border-gray-200">
+                        <h3 class="text-xl font-bold mb-4">プラン例②：特別な文化体験を提供したい施設様</h3>
+                        <p><strong>年に一度、施設の記念行事で「松プラン」</strong>を導入し、職人の技に触れる特別な体験を。その他の月はご予算に応じて「梅」や「竹」をご利用いただけます。</p>
+                    </div>
+                </div>
+                 <p class="mt-8 text-lg">お客様のご予算やご要望に応じて、最適な年間プランをご提案いたします。</p>
+            </div>
+        </section>
+
+        <!-- 6. お問い合わせ -->
+        <section id="contact" class="py-16 md:py-24 bg-[#8C7D6E] text-white">
+            <div class="container mx-auto px-6 max-w-4xl text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">まずはお気軽にご相談ください</h2>
+                <p class="text-lg mb-8 max-w-2xl mx-auto">「うちの施設の規模でも大丈夫？」「予算はこれくらいなのだけど…」など、どんなことでも構いません。入居者の皆様の笑顔のために、私たちが心を込めてお手伝いいたします。</p>
+                <div class="bg-white text-[#413832] rounded-lg shadow-xl p-8 max-w-2xl mx-auto">
+                    <p class="text-lg mb-4">お電話の際に<strong class="text-[#8C7D6E]">「彩雲堂倶楽部の件で」</strong>とお伝えいただくとスムーズです。</p>
+                    <p class="text-lg font-bold">彩雲堂本店</p>
+                    <a href="tel:0852212727" class="block text-4xl font-bold my-2 hover:text-[#8C7D6E] transition-colors">0852-21-2727</a>
+                    <p class="text-base mb-6">受付時間 10:00〜17:00</p>
+                    <hr class="my-6 border-gray-200">
+                    <p class="text-lg font-bold">営業担当：米澤（よねざわ）</p>
+                    <a href="tel:08056137306" class="block text-3xl font-bold my-2 hover:text-[#8C7D6E] transition-colors">080-5613-7306</a>
+                    <p class="text-base mt-6">〒690-0064 島根県松江市天神町124</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#413832] text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 彩雲堂. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
